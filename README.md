@@ -14,7 +14,8 @@ A tiny jQuery Plugin to expand and contract some content on click.
 	expandables:null,			// Required, any child element, e.g. 'dd'
 	open:':first',				// Possible choices are e.g. ':first', ':last', ...
 	duration:200,				// Slide duration
-	easing:'swing'				// Animation: 'swing' or 'linear' are supported by default. For more advanced easing include the jquery.easing plugin.
+	easing:'swing'				// Animation: 'swing' or 'linear' are supported by default. For more advanced easing include the
+								// jquery.easing plugin.
 
 ## HTML Structure
 	<dl>
@@ -33,7 +34,7 @@ A tiny jQuery Plugin to expand and contract some content on click.
 		<dt><a>Heading 4</a></dt>
 		<dd>Content 4</dd>
 	</dl>
-	<!-- -->
+	<!-- Or use any other valid HTML structure -->
 	<div>
 		<h3><a>Heading 1</a></h3>
 		<p>Content 1</p>
