@@ -33,7 +33,7 @@ A tiny jQuery Plugin to expand and contract some content on click.
 		<dt><a>Heading 4</a></dt>
 		<dd>Content 4</dd>
 	</dl>
-
+	<!-- -->
 	<div>
 		<h3><a>Heading 1</a></h3>
 		<p>Content 1</p>
@@ -47,3 +47,7 @@ A tiny jQuery Plugin to expand and contract some content on click.
 		<h3><a>Heading 4</a></h3>
 		<p>Content 4</p>
 	</div>
+
+## History
+### 2011-05-25
+Initial commit

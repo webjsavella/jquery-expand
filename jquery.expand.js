@@ -1,5 +1,5 @@
 /*
- * jQuery Expand Plugin v0.1 (2011-05-25)
+ * jQuery Expand Plugin v0.2 (2011-05-25)
  * Copyright (c) 2011, Gregory Plüss (gpluess@fconnection.com)
  */
 
@@ -10,11 +10,11 @@
 	$.fn.expand = function(options)
 	{
 		var defaults = {
-			triggers:null,				// any child element, e.g. 'dt a'
-			expandables:null,			// any child element, e.g. 'dd'
-			open:':first',				// possible choices are e.g. ':first', ':last', ':even', ':odd', ...
-			duration:200,
-			easing:'swing'
+			triggers:null,				// Required, any child element, e.g. 'dt a'
+			expandables:null,			// Required, any child element, e.g. 'dd'
+			open:':first',				// Possible choices are e.g. ':first', ':last', ...
+			duration:200,				// Slide duration
+			easing:'swing'				// Animation: 'swing' or 'linear' are supported by default. For more advanced easing include the jquery.easing plugin.
 		};
 
 		var options = $.extend(defaults, options);
