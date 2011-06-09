@@ -1,27 +1,19 @@
 /*
- * jQuery Expand Plugin v0.2 (2011-05-25)
+ * jQuery Expand Plugin v0.2.1 (2011-05-26)
  * Copyright (c) 2011, Gregory Plüss (gpluess@fconnection.com)
  */
 
 (function($)
 {
-	var version = '0.2';
+	var version = '0.2.1';
 
 	$.fn.expand = function(options)
 	{
-		var defaults = {
-			triggers:null,				// Required, any child element, e.g. 'dt a'
-			expandables:null,			// Required, any child element, e.g. 'dd'
-			open:':first',				// Possible choices are e.g. ':first', ':last', ...
-			duration:200,				// Slide duration
-			easing:'swing'				// Animation: 'swing' or 'linear' are supported by default. For more advanced easing include the jquery.easing plugin.
-		};
-
-		var options = $.extend(defaults, options);
+		var options = $.extend({}, $.fn.expand.defaults, options);
 
 		return this.each(function()
 		{
-			var triggers	= $(this).find(options.triggers);
+			var triggers = $(this).find(options.triggers);
 			var expandables = $(this).find(options.expandables);
 
 			triggers.filter(options.open).parent().addClass('open');
@@ -39,6 +31,14 @@
 				expandables.not($(this).parent().next()).slideUp(options.duration, options.easing);
 			});
 		});
+	};
+
+	$.fn.expand.defaults = {
+		triggers: null,				// Required, any child element, e.g. 'dt a'
+		expandables: null,			// Required, any child element, e.g. 'dd'
+		open: ':first',				// Possible choices are e.g. ':first', ':last', ...
+		duration: 200,				// Slide duration
+		easing: 'swing'				// Animation: 'swing' or 'linear' are supported by default. For more advanced easing include the jquery.easing plugin.
 	};
 
 	$.fn.expand.version = function() { return version; };
