@@ -10,11 +10,12 @@ A tiny jQuery Plugin to expand and contract some content on click.
 	});
 
 ## Options
-	triggers:null,				// Required, any child element, e.g. 'dt a'
-	expandables:null,			// Required, any child element, e.g. 'dd'
-	open:':first',				// Possible choices are e.g. ':first', ':last', ...
-	duration:200,				// Slide duration
-	easing: 'swing',			// Animation: 'swing' or 'linear' are supported by default. For more advanced easing include the jquery.easing plugin.
+	triggers: null,				// Required, any child element, e.g. 'dt a'
+	expandables: null,			// Required, any child element, e.g. 'dd'
+	open: ':first',				// Possible choices are e.g. ':first', ':last', ...
+	duration: 200,				// Slide duration
+	easing: 'swing',			// Animation: 'swing' or 'linear' are supported by default. For more advanced easing
+								// include the jquery.easing plugin.
 	simultaneously: false		// Queue: expand and collapse simultaneously?
 
 ## HTML Structure
@@ -52,3 +53,9 @@ A tiny jQuery Plugin to expand and contract some content on click.
 ## History
 ### 2011-05-25
 Initial commit
+
+### 2011-05-25
+tagged v0.2
+
+### 2011-06-09
+tagged v0.3
